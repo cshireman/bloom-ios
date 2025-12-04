@@ -370,10 +370,3 @@ struct PasswordRequirements {
         hasMinLength && hasUppercase && hasNumber
     }
 }
-
-// Placeholder for UserProfile entity (will be defined in Domain layer)
-struct UserProfile: Identifiable {
-    let id: String
-    let email: String
-    let displayName: String
-}
