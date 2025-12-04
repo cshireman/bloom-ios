@@ -9,6 +9,10 @@ import SwiftUI
 
 @main
 struct BloomApp: App {
+    init() {
+        SecurityUtil.shared.hardenCache()
+    }
+
     var body: some Scene {
         WindowGroup {
             OnboardingView()
