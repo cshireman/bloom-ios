@@ -6,7 +6,7 @@ Build a mobile wellness app combining AI-powered daily check-ins with habit trac
 ## Technology Stack
 - **Frontend**: SwiftUI
 - **Backend**: Firebase (Auth, Firestore, Cloud Functions)
-- **AI**: OpenAI GPT-4-mini or Anthropic Claude API
+- **AI**: OpenAI GPT-4-mini, Anthropic Claude API or local Foundation Model (default)
 - **Local Storage**: SwiftData
 - **Notifications**: Firebase Cloud Messaging
 - **State Management**: Combine + SwiftUI @Observable

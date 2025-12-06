@@ -208,12 +208,12 @@ struct GoalCard: View {
                         .fill(goal.color.opacity(isSelected ? 0.2 : 0.1))
                         .frame(width: 60, height: 60)
 
-                    Image(systemName: goal.icon)
+                    Image(systemName: goal.type.icon)
                         .font(.system(size: 28))
                         .foregroundColor(isSelected ? goal.color : .bloomTextSecondary)
                 }
 
-                Text(goal.title)
+                Text(goal.type.rawValue)
                     .font(.bloomBodyMedium)
                     .foregroundColor(isSelected ? .bloomTextPrimary : .bloomTextSecondary)
                     .multilineTextAlignment(.center)
@@ -268,13 +268,6 @@ struct PageIndicator: View {
             }
         }
     }
-}
-
-struct WellnessGoal: Identifiable, Hashable {
-    let id: String
-    let icon: String
-    let title: String
-    let color: Color
 }
 
 #Preview {

@@ -21,12 +21,12 @@ final class OnboardingViewModel {
     // MARK: - Available Goals
 
     let availableGoals: [WellnessGoal] = [
-        WellnessGoal(id: "sleep", icon: "moon.stars.fill", title: "Better Sleep", color: .bloomPrimary),
-        WellnessGoal(id: "stress", icon: "heart.fill", title: "Reduce Stress", color: .bloomCoral),
-        WellnessGoal(id: "energy", icon: "bolt.fill", title: "More Energy", color: .bloomGreen),
-        WellnessGoal(id: "mindfulness", icon: "brain.head.profile", title: "Mindfulness", color: .bloomPrimary),
-        WellnessGoal(id: "exercise", icon: "figure.walk", title: "Exercise More", color: .bloomCoral),
-        WellnessGoal(id: "gratitude", icon: "sparkles", title: "Practice Gratitude", color: .bloomGreen)
+        WellnessGoal(id: "sleep", type: .improveSleep, color: .bloomPrimary),
+        WellnessGoal(id: "stress", type: .reduceStress, color: .bloomCoral),
+        WellnessGoal(id: "energy", type: .increaseEnergy, color: .bloomGreen),
+        WellnessGoal(id: "mindfulness", type: .mindfulness, color: .bloomPrimary),
+        WellnessGoal(id: "physical", type: .physicalHealth, color: .bloomCoral),
+        WellnessGoal(id: "worklife", type: .workLifeBalance, color: .bloomGreen)
     ]
 
     // MARK: - Use Cases (to be injected)
